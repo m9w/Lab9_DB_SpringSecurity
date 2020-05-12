@@ -1,0 +1,337 @@
+*{margin: 0;}
+
+
+#head input.logout, #head input.setting{
+    background-image: url("../svg/logout.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    background-color: #0101cc66;
+    border-width: 0;
+    border-radius: 0;
+    height: 48px;
+    width: 65px;
+    margin: 0 0 0 8px;
+    box-shadow: inset 0 0px 20px 0px #000b38;
+    align-self: baseline;
+    transition: box-shadow .5s;
+}
+
+
+#head input.logout:hover, #head input.setting:hover{
+    box-shadow: inset 0 0px 20px 0px #000b38, inset 0 0 20px 14px #00fbc199;
+}
+#head input.setting{
+background-image: url("../svg/settings.svg");
+}
+
+#messageLine>div[tag="G"],
+#messageLine>div[tag="R"]{
+width: 100vw;
+border: 5px inset #82808080;
+box-sizing: border-box;
+line-height: 1.5em;
+padding: 0 10px;
+}
+
+#messageLine>div[tag="G"]:after,
+#messageLine>div[tag="R"]:after{
+content: "(click for close)";
+font-size: .7em;
+position: absolute;
+right: 10px;
+}
+
+#messageLine>div[tag="G"]{
+background-color: lightgreen;
+}
+
+#messageLine>div[tag="R"]{
+background-color: lightcoral;
+}
+
+#head{
+display: flex;
+background-color: #2a5796;
+height: 3em;
+color: aliceblue;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+#head form[action="/changePassword"]{
+display: flex;
+flex-direction: column;
+padding: 15px 20px;
+position: fixed;
+right: -10px;
+top: 60px;
+background-color: #e4e4e4;
+box-shadow: 1px 3px 11px #545454a8;
+visibility: hidden;
+opacity: 0.01;
+transition: all 0.3s;
+z-index: 100;
+}
+
+#head .show + form{
+right: 15px !important;
+opacity: 1 !important;
+visibility: visible !important;
+}
+
+
+#head form>span{
+text-align: center;
+color: black;
+font: 20px/1.8em sans-serif;
+}
+
+#head input{
+margin: 9px;
+padding: 7px;
+border-radius: 3px;
+box-shadow: 1px 1px 6px 0px #00000040, inset 1px 1px 3px 0 #00000021;
+outline: none;
+border: solid 1px #9a9a9a;
+font-size: 12pt;
+font-family: sans-serif;
+}
+
+#head>div{
+display: flex;
+align-items: center;
+}
+
+#emp, #dept{
+font-family: gn,roboto,'open sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+font-weight: bold;
+font-size: 15pt;
+padding: 0 25px;
+background: #39ffff4f;
+color: aliceblue;
+border-style: none;
+margin: 0 5px;
+box-shadow: inset 0 0 5px 0 #000000c7, 1px 1px 5px 0 #0000006b;
+height: 1.8em;
+outline: none;
+border-radius: 4px;
+}
+
+
+#pagination{
+display: flex;
+justify-content: center;
+position: relative;
+}
+.pagination{
+margin: 20px 0;
+align-self: center;
+}
+
+.pagination>.counter{
+font-family: gotham pro regular;
+font-size: initial;
+line-height: initial;
+}
+.pagination>ul{
+display: inline-block;
+padding-left: 0;
+border-radius: 4px;
+}
+
+.pagination > ul > li {display: inline;}
+
+.pagination>ul>li:not([class])>a,
+.pagination>ul>li[class]>a:before,
+.pagination>ul>li:not([class])>span,
+.pagination>ul>li[class]>span:before{
+position: relative;
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.42857143;
+color: #428bca;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+visibility: visible;
+font-size: 14pt;
+}
+
+.pagination>ul>li:first-child>a:before,
+.pagination>ul>li:first-child>span:before{
+margin-left: 0;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+
+.pagination>ul>li:last-child>a:before,
+.pagination>ul>li:last-child>span:before{
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+.pagination>ul>li:not([class])>a:hover,
+.pagination>ul>li[class]>a:hover:before{
+color: #2a6496;
+background-color: #eee;
+border-color: #ddd;
+}
+
+.pagination>ul>li[class]>a,
+.pagination>ul>li[class]>span{
+width:0.5em;
+font-size: 0;
+padding: 0;
+margin: 0;
+border: 0;
+visibility: hidden;
+}
+
+.pagination>ul>li>a:before{color: #428bca;}
+
+.pagination-start>*:before{content: "\00ab";}
+.pagination-prev>*:before{content: "\2039";}
+.pagination-next>*:before{content: "\203A";}
+.pagination-end>*:before{content: "\00bb";}
+
+.pagination>ul>li:not([class])>span{
+z-index: 2;
+color: #fff;
+cursor: default;
+background-color: #428bca;
+border-color: #428bca;
+}
+
+.pagination>ul>li[class]>span:before{
+color: #777;
+cursor: not-allowed;
+background-color: #fff;
+border-color: #ddd;
+}
+
+.pagination>ul>li:not([class])>a,
+.pagination>ul>li:not([class])>span{
+width: 40px;
+text-align: center;
+padding: 6px 0;
+}
+
+.pagination>ul>li:not([class])>a,
+.pagination>ul>li[class]>a:before{
+cursor: pointer;
+}
+
+#modal{
+position: fixed;
+display: none;
+padding: 10px 30px;
+z-index: 110;
+background: white;
+transform: translate(-50%, -50%);
+left: 50%;
+top: 50%;
+box-shadow: 1px 2px 20px 1px #0000009c;
+filter: none !important;
+}
+
+#modal input {
+width: 21vw;
+margin: 10px;
+position: relative;
+padding: 5px;
+border-radius: 4px;
+border: solid 1px silver;
+}
+
+#modal + div{
+position: fixed;
+display: none;
+top: 0;
+height: 100vh;
+width: 100vw;
+background: #00000090;
+z-index: 105;
+color: white;
+font: bold 53pt cursive;
+text-align: end;
+letter-spacing: 0.5em;
+text-shadow: -1px 0 5px black, 4px 4px 20px black;
+cursor: pointer;
+filter: none !important;
+}
+
+#modal input:valid  {background: linear-gradient(90deg,  transparent, lightgreen);}
+#modal input:invalid{background: linear-gradient(270deg, transparent, lightcoral);}
+
+body.show>#modal{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
+body.show>#modal+div{display: block;}
+
+body.show>*{
+filter: blur(2px);
+overflow: hidden;
+}
+
+.BlueBut {
+position: relative;
+display: inline-block;
+text-decoration: none;
+padding: 0 30px;
+height: 40px;
+line-height: 40px;
+vertical-align: middle;
+background: #048dc8;
+font-size: 20px;
+color: rgb(255, 255, 255);
+transition: .4s;
+border: 0;
+outline: none;
+width: 100%;
+}
+
+.BlueBut:before {
+position: absolute;
+content: '';
+left: 0;
+top: 0;
+width: 0;
+height: 0;
+border: none;
+border-left: solid 21px white;
+border-bottom: solid 41px transparent;
+z-index: 1;
+transition: .4s;
+}
+
+.BlueBut:after {
+position: absolute;
+content: '';
+right: 0;
+top: 0;
+width: 0;
+height: 0;
+border: none;
+border-left: solid 21px transparent;
+border-bottom: solid 41px white;
+z-index: 1;
+transition: .4s;
+}
+
+.BlueBut:hover:before, .BlueBut:hover:after {border-left-width: 25px;}
+
+.BlueBut:hover {background: #2a5796;;}
+
+.BlueBut.plus{
+position: absolute;
+right: 2px;
+width: 75px;
+top: 0;
+z-index: 100;
+}

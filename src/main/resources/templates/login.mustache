@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/res/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/main.css">
+</head>
+<body>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-t-50 p-b-90">
+            <form class="login100-form validate-form flex-sb flex-w" method="post">
+                <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+                <span class="login100-form-title p-b-51">
+                    {{title}}
+                </span>
+                <div class="wrap-input100 validate-input m-b-16 alert-validate" data-validate="Username is required">
+                    <input class="input100" type="text" name="username" placeholder="Username">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-16 alert-validate" data-validate="Password is required">
+                    <input class="input100" type="password" name="password" placeholder="Password">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="flex-sb-m w-full p-t-3 p-b-24">
+                    <div class="contact100-form-checkbox" style="color:#c80000;">
+                        {{#worn_message}}
+                            {{worn_message}}
+                        {{/worn_message}}
+                    </div>
+                    <div>
+                        <a href="{{href}}" class="txt1">
+                            {{href_name}}
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-login100-form-btn m-t-17">
+                    <input class="login100-form-btn" type="submit" value="{{button}}"/>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/res/js/jquery-3.2.1.min.js"></script>
+<script src="/res/js/animsition.min.js"></script>
+<script src="/res/js/popper.js"></script>
+<script src="/res/js/bootstrap.min.js"></script>
+<script src="/res/js/select2.min.js"></script>
+<script src="/res/js/moment.min.js"></script>
+<script src="/res/js/daterangepicker.js"></script>
+<script src="/res/js/countdowntime.js"></script>
+<script src="/res/js/main.js"></script>
+</body>
+</html>

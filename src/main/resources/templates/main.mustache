@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/res/css/general.css">
+    <link href="https://cdn.fancygrid.com/fancy.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="messageLine">
+    {{#message}}
+        <div {{#message_tag}}tag={{message_tag}}{{/message_tag}} onclick="$(this).remove()">{{message}}</div>
+    {{/message}}
+</div>
+
+<div id="head">
+    <div>
+        <button id="emp">emp</button>
+        <button id="dept">dept</button>
+    </div>
+    <div>
+        <span>Hello, {{username}}</span>
+        <input type="submit" class="setting" onclick="$(this).toggleClass('show')" value="">
+        <form action="/changePassword" method="post">
+            <span>Change password</span>
+            <input type="password" name="old_password" placeholder="Old password">
+            <input type="password" name="new_password" placeholder="New password">
+            <input type="password" name="new2_password" placeholder="Repeat new password">
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+            <input type="submit" value="Change"/>
+        </form>
+
+        <form action="/logout" method="post">
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+            <input type="submit" class="logout" value=""/>
+        </form>
+    </div>
+</div>
+<div id="container"></div>
+<div id="pagination"></div>
+<form id="modal" onsubmit = "event.preventDefault(); document.send_modal();"></form><div onclick="$('body').toggleClass('show')">X</div>
+<script>var csrf = "{{_csrf.token}}";</script>
+<script src="https://cdn.fancygrid.com/fancy.min.js"></script>
+<script src="/res/js/jquery-3.2.1.min.js"></script>
+<script src="/res/js/general.js"></script>
+</body>
+</html>
+
