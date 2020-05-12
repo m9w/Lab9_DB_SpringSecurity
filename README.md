@@ -32,9 +32,11 @@ Completed run:
 ![complete_run](images/4.PNG)
 
 3. Firstly registration:
+
 ![complete_run](images/5.PNG)
 
 4 Login user account:
+
 ![complete_run](images/6.PNG)
 
 5 Head page after sign in:
