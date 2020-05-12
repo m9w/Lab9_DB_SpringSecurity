@@ -55,6 +55,7 @@ Completed run:
 ![complete_run](images/11.PNG)
 
 10 write valid values and add record:
+
 ![complete_run](images/12.PNG)
 
 11 seen success result and our records on last page 
@@ -64,6 +65,7 @@ Completed run:
 ![complete_run](images/14.PNG)
 
 13 try using not exist deptno
+
 ![complete_run](images/15.PNG)
 result:
 ![complete_run](images/16.PNG)
@@ -71,9 +73,13 @@ check dept:
 ![complete_run](images/17.PNG)
 
 14 change password form
+
 ![complete_run](images/18.PNG)
+
 white invalid old password:
+
 ![complete_run](images/19.PNG)
+
 write not equal new password:
 ![complete_run](images/20.PNG)
 write correct password:
