@@ -1,6 +1,8 @@
 # Lab9_DB_SpringSecurity
 Task
+
 ![task](images/0.PNG)
+
 Created by using 
 - Spring Core/Boot/Data/MVC/Security
 - Mustache
@@ -60,6 +62,7 @@ Completed run:
 ![complete_run](images/10.PNG)
 
 9 Press "Plus" and show modal form adding new records (invalid fields lighting lightcoral color)
+
 ![complete_run](images/11.PNG)
 
 10 write valid values and add record:
@@ -75,9 +78,11 @@ Completed run:
 13 try using not exist deptno
 
 ![complete_run](images/15.PNG)
+
 result:
 
 ![complete_run](images/16.PNG)
+
 check dept:
 
 ![complete_run](images/17.PNG)
@@ -93,6 +98,7 @@ white invalid old password:
 write not equal new password:
 
 ![complete_run](images/20.PNG)
+
 write correct password:
 
 ![complete_run](images/21.PNG)
