@@ -36,11 +36,12 @@ public class MainController {
         if (!passwordSet.equalNewPass())putMessage(model,"New passwords not equal!","R");
         else {
             User user = userRepo.findByUsername(getUserName());
-            if(user.equalsPassword(passwordSet.old_password)) {
+            if(!user.equalsPassword(passwordSet.old_password)) putMessage(model,"Old password invalid!","R");
+            else {
                 user.setPassword(passwordSet.new_password);
                 userRepo.save(user);
                 putMessage(model,"Success!","G");
-            }else putMessage(model,"Old password invalid!","R");
+            }
         }
         return general(model);
     }
