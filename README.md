@@ -15,6 +15,7 @@ How it's work
 https://www.dropbox.com/s/3dz595do8nbejtw/lab9-1.0-SNAPSHOT.jar?dl=0
 
 Change settings connect to DB: 
+
 ![DB_chenge](images/1.PNG)
 
 Tables emp and dept must be created, for example using init.sql
@@ -23,12 +24,15 @@ And simply run (cmd):
 java -jar lab9-1.0-SNAPSHOT.jar
 
 1 Starting application:
+
 ![Start_run](images/2.PNG)
 
 Completed run:
+
 ![complete_run](images/3.PNG)
 
 2. goto localhost:8080
+
 ![complete_run](images/4.PNG)
 
 3. Firstly registration:
@@ -40,15 +44,19 @@ Completed run:
 ![complete_run](images/6.PNG)
 
 5 Head page after sign in:
+
 ![complete_run](images/7.PNG)
 
 6 Show first records table emp:
+
 ![complete_run](images/8.PNG)
 
 7 set pagesize=20 and go to prelast page:
+
 ![complete_run](images/9.PNG)
 
 8 First page shows 20 records:
+
 ![complete_run](images/10.PNG)
 
 9 Press "Plus" and show modal form adding new records (invalid fields lighting lightcoral color)
@@ -68,8 +76,10 @@ Completed run:
 
 ![complete_run](images/15.PNG)
 result:
+
 ![complete_run](images/16.PNG)
 check dept:
+
 ![complete_run](images/17.PNG)
 
 14 change password form
@@ -81,6 +91,8 @@ white invalid old password:
 ![complete_run](images/19.PNG)
 
 write not equal new password:
+
 ![complete_run](images/20.PNG)
 write correct password:
+
 ![complete_run](images/21.PNG)
